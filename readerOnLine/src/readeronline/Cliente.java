@@ -1,4 +1,4 @@
-package chat;
+package readeronline;
 
 import java.awt.event.*;
 import java.io.*;
@@ -11,12 +11,11 @@ import javax.swing.*;
  */
 public class Cliente extends JFrame implements ActionListener {
 
-    private static final long serialVersionUID = 1L;
     Socket socket = null;
     // Preparar Streams
     DataInputStream fentrada; // Para mensajes de todos
     DataOutputStream fsalida; // Para escribir los mensajes
-    String nombre;
+    
     static JTextField mensaje = new JTextField();
     private JScrollPane scrollpanel;
     static JTextArea textarea1;
